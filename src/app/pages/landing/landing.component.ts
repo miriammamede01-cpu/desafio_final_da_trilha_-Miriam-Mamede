@@ -26,12 +26,12 @@ import { RouterLink } from '@angular/router';
   styles: [`
     /* Base Desktop */
     .landing-hero { 
-      min-height: 90vh; /* Aumentei um pouco */
+      min-height: 90vh;
       display: flex; 
       align-items: center; 
       justify-content: center; 
       text-align: center;
-      padding: 20px; /* Garante que nunca encoste na borda */
+      padding: 20px;
       box-sizing: border-box;
     }
     
@@ -58,13 +58,12 @@ import { RouterLink } from '@angular/router';
     
     .btn-large { font-size: 1.2rem; padding: 15px 40px; width: auto; }
 
-    /* --- CORREÇÃO MOBILE (Evita cortes) --- */
     @media (max-width: 768px) {
       .landing-hero {
-        align-items: flex-start; /* Impede que corte o topo */
-        padding-top: 60px; /* Espaço extra em cima */
-        padding-bottom: 40px; /* Espaço extra embaixo */
-        height: auto; /* Permite rolar se precisar */
+        align-items: flex-start;
+        padding-top: 60px;
+        padding-bottom: 40px;
+        height: auto;
       }
 
       .features-grid { 
@@ -77,7 +76,6 @@ import { RouterLink } from '@angular/router';
       
       .btn-large { width: 100%; box-sizing: border-box; }
       
-      /* Logo menor para não ocupar toda a tela */
       .icon-glow { 
         width: 60px; height: 60px; 
         line-height: 60px; 
