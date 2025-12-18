@@ -35,4 +35,13 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
     }
   `]
 })
-export class NavbarComponent {}
+export class NavbarComponent {
+  get isLogged() {
+    return !!localStorage.getItem('user_session');
+  }
+
+  logout() {
+    localStorage.removeItem('user_session');
+    window.location.href = '/'; // Força refresh pra limpar estado
+  }
+}
